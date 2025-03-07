@@ -19,6 +19,28 @@ The contract defines a decentralized email system using Solidity-like storage st
 
 ### 🔧 Functions
 
+
+#### Working Contract Address
+```rust
+0x8e76d792920bcee1debb604a1b372fb79fbd59e2
+```
+
+
+#### Working Abi 
+```rust
+interface IApp {
+    function sendEmail(address to, string calldata message) external;
+
+    function getLen() external view returns (uint256);
+
+    function getMail(uint128 start, uint128 end) external view returns (address,string,uint64)[] memory;
+
+    function blocking(address block_ad, bool status) external;
+
+    function blockingStatus(address b_s) external view returns (bool);
+}
+```
+
 #### 📧 Sending an Email
 ```rust
 pub fn send_email(&mut self, to: Address, message: String)
