@@ -79,15 +79,13 @@ Checks if a specific address is blocked by the caller.
 
 ### Steps
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/stylus-email-dapp.git
-   cd stylus-email-dapp
-   ```
-
+   
 2. Export ABI:
    ```sh
    cargo stylus export-abi
    ```
-4. Deploy to Arbitrum Stylus Testnet/Mainnet using your preferred method.
-
+3. Deploy to Arbitrum Stylus Testnet/Mainnet using your preferred method.
+    ```sh
+    cargo stylus deploy --private-key=<private-key>
+    ```
 
